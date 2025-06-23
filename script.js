@@ -55,6 +55,6 @@ const hamburger = document.querySelector('.hamburger');
 
       const fullMessage = `*New Contact Message*%0A*Name:* ${name}%0A*Email:* ${email}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
 
-      const phoneNumber = "919082386073"; // Your WhatsApp number (with country code, no +)
+      const phoneNumber = "+919082386073"; // Your WhatsApp number (with country code, no +)
       window.open(`https://wa.me/${phoneNumber}?text=${fullMessage}`, "_blank");
     });
