@@ -508,6 +508,49 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Tech Stack Carousel */
+.tech-carousel {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+
+.tech-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.tech-logo {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 80px;
+    height: 80px;
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.tech-logo img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    filter: grayscale(1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.tech-logo:hover img {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .hero {
