@@ -610,6 +610,10 @@ footer {
         width: 300px;
         height: 291px;
     }
+    .tech-carousel{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 480px) {
